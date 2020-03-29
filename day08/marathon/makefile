@@ -10,7 +10,7 @@ $(NAME):
 	ranlib $(NAME)
 
 clean:
-	/bin/rm -f ft_putchar.o ft_putstr.o ft_putnbr.o
+	/bin/rm -f ft_putchar.o ft_putstr.o ft_putnbr.o main.o check_row.o solve_count.o
 
 fclean: clean
 	/bin/rm -f $(NAME)
