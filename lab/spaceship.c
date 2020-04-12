@@ -1,0 +1,42 @@
+typedef struct {
+        float sx;
+        float sy;
+        float heading;
+        float speed;
+        int gone;
+        ALLEGRO_COLOR color;
+} Spaceship;
+
+al_draw_line(-8, 9, 0, -11, s->color, 3.0f);
+al_draw_line(0, -11, 8, 9, s->color, 3.0f);
+al_draw_line(-6, 4, -1, 4, s->color, 3.0f);
+al_draw_line(6, 4, 1, 4, s->color, 3.0f);
+
+ALLEGRO_EVENT_QUEUE *queue;
+queue = al_create_event_queue();
+ALLEGRO_EVENT event;
+al_wait_for_event(queue, &event);
+
+if (event.type == ALLEGRO_EVENT_KEY_DOWN) {
+	switch(event.keyboard.keycode) {
+		case ALLEGRO_KEY_LEFT:
+
+			break;
+		case ALLEGRO_KEY_RIGHT:
+
+			break;
+		case ALLEGRO_KEY_SPACE:
+
+			break;
+	}
+}
+
+typedef struct {
+	float sx;
+	float sy;
+	float heading;
+	float speed;
+	int gone;
+	ALLEGRO_COLOR color;
+} Blast;
+
